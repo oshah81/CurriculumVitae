@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg1001" version="1.1" viewBox="0 0 136 512" height="512" width="512">
+  <defs>
+<font id="SvgjsFont1000" horiz-adv-x="1000">
+  <font-face font-family="Bungee" font-weight="400" font-stretch="normal" units-per-em="1000" panose-1="0 0 0 0 0 0 0 0 0 0" ascent="860" descent="-140" x-height="720" cap-height="720" bbox="-604.118 -914.118 1942.12 1634.12" underline-thickness="0" underline-position="0" unicode-range="U+0020-FF3E"></font-face>
+    <glyph glyph-name="O" unicode="O" horiz-adv-x="737" d="M679 189q0 -46 -13.5 -83.5t-48 -64t-95 -41.5t-153.5 -15t-154 15t-95.5 41.5t-48 64t-13.5 83.5v341q0 46 13.5 83.5t48 64.5t95.5 42t154 15t153.5 -15t95 -42t48 -64.5t13.5 -83.5v-341zM285 225q0 -20 15 -33.5t69 -13.5t69 13.5t15 33.5v269q0 19 -15 32.5
+t-69 13.5t-69 -13.5t-15 -32.5v-269z"></glyph>
+    <glyph glyph-name="S" unicode="S" horiz-adv-x="650" d="M403 0h-316q-19 0 -27.5 8.5t-8.5 27.5v117q0 19 8.5 27.5t27.5 8.5h269q13 0 19.5 8.5t6.5 20.5q0 17 -6.5 25t-19.5 9l-150 21q-70 10 -112.5 46t-42.5 120v105q0 85 55 130.5t152 45.5h280q19 0 27.5 -8.5t8.5 -27.5v-119q0 -19 -8.5 -27.5t-27.5 -8.5h-233
+q-13 0 -20 -8.5t-7 -21.5t7 -22t20 -10l149 -20q70 -10 113 -46t43 -120v-105q0 -85 -55.5 -130.5t-151.5 -45.5z"></glyph>
+  </font>
+  </defs>
+  <g transform="translate(0,215)">
+    <text y="86" x="-188" style="font-size:378px;font-family:Bungee;fill:#4682b4">O</text>
+    <text y="271" x="86" style="font-size:378px;font-family:Bungee;fill:#48d1cc;">S</text>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.5405405405405405) brightness(3); } }
+</style></svg>

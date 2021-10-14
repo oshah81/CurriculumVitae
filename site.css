@@ -1,0 +1,48 @@
+﻿/*
+(C) 2021 Osama Shah.
+License: Creative Commons ShareAlike 4.0
+*/
+
+:root { --hyperlink: #ec0101; --hyperlink-hover: #000; --background-color: #fefefe; }
+
+body { color: #666; background-color: var(--background-color); margin: 0; padding: 0; }
+body { margin-left: 1em; margin-right: 1em; }
+
+a { transition: color .35s ease-out; }
+
+	a:link { text-decoration: none; color: var(--red-link); }
+	a:visited { text-decoration: none; color: var(--red-link); }
+	a:hover { color: var(--hyperlink-hover); }
+
+body { margin-left: 1em; margin-right: 1em; }
+
+h1, h2, h3 { font-family: 'Merriweather', serif; padding: 0 0 4px 0; }
+
+h2 { text-transform: uppercase; font-size: 26px; text-align: center; }
+h3 { font-size: 16px; line-height: 24px; color: #1c1c1c; }
+
+
+header { height: 20ch; text-align: center; }
+
+
+main { font-family: 'Noto Serif'; }
+
+	main section { border-top: 2px dotted #bbb; }
+
+	main ul { list-style: none; margin: 0; padding: 0; }
+
+		main ul > li { list-style: none; margin: 0; padding: 6px 0 0; }
+
+
+img, iframe { margin-bottom: 50px; box-shadow: 2px 25px 40px 0 rgba(0, 0, 0, .15); }
+
+footer { text-align: center; border-top: 1px dotted #bbb; }
+
+@media (min-width: 1280px) {
+	body { margin-left: 5vw; margin-right: 5vw; }
+	.academic { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-row-gap: 5ch; grid-column-gap: 5ch; padding-bottom: 5ch; }
+		.academic .card { box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; margin: 1ch; border: 1px solid #ccc; padding: 3ch; }
+}
+
+footer a { color: #be4700; border-bottom-style: none; margin-left: 1em; }
+footer a::after { content: '|'; margin-left: 1em; }
