@@ -3,7 +3,7 @@
 License: Creative Commons ShareAlike 4.0
 */
 
-:root { --hyperlink: #ec0101; --hyperlink-hover: #000; --background-color: #fefefe; }
+:root { --red-link: #ec0101; --hyperlink-hover: #000; --background-color: #fefefe; }
 
 body { color: #666; background-color: var(--background-color); margin: 0; padding: 0; }
 body { margin-left: 1em; margin-right: 1em; }
