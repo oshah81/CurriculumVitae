@@ -349,3 +349,7 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 /web.config
+/ignore/svgtopng.zip
+/ignore/favicon.zip
+/ignore/Bungee.zip
+/ignore/favicon_ (1).png
