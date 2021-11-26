@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="prefetch" href="./script.js" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif&display=swap" rel="stylesheet">
 	<style>
 :root { --red-link: #ec0101; --hyperlink-hover: #000; --background-color: #fefefe; }
@@ -19,6 +20,8 @@
 body { color: #666; background-color: var(--background-color); margin: 0; padding: 0; }
 body { margin-left: 1em; margin-right: 1em; }
 
+	button.link-like { border: none; color: var(--red-link); background: none; cursor: pointer; }
+		button.link-like:hover { color: var(--hyperlink-hover); }
 a { transition: color .35s ease-out; }
 
 	a:link { text-decoration: none; color: var(--red-link); }
@@ -35,6 +38,8 @@ h3 { font-size: 16px; line-height: 24px; color: #1c1c1c; }
 
 header { height: 20ch; text-align: center; }
 
+.contacts { display: flex;  gap: 1em; align-items: baseline; justify-content: center; }
+.contacts .card {display: block; }
 
 main { font-family: 'Noto Serif'; }
 
@@ -58,16 +63,34 @@ footer { text-align: center; border-top: 1px dotted #bbb; }
 footer a { color: #be4700; border-bottom-style: none; margin-left: 1em; }
 footer a::after { content: '|'; margin-left: 1em; }
 
+
 	</style>
-    <script src="script.js"></script>
+    <script type="module">
+        import { exportToWord } from "./script.js";
+
+
+        document.getElementById("export-word-btn").addEventListener("click", async evt => await exportToWord(evt));
+
+    </script>
 </head>
 <body>
     <header>
         <h1>Osama Shah - Curriculum Vitae</h1>
 		<div class="contacts">
-			<div class="card">
-				Email: <a href="mailto:oshahos99@gmail.com">oshahos99@gmail.com</a>
-			</div>
+            <div class="card">
+                Email: <a href="mailto:oshahos99@gmail.com">✉oshahos99@gmail.com</a>
+            </div>
+            <div class="card">
+                Word format: <button class="link-like" id="export-word-btn">
+                <svg viewBox="0 0 96 96" fill="#FFF" stroke-miterlimit="10" stroke-width="2" style="width: 2em; vertical-align: bottom;">
+                    <path stroke="#979593" d="M67.1716,7H27c-1.1046,0-2,0.8954-2,2v78 c0,1.1046,0.8954,2,2,2h58c1.1046,0,2-0.8954,2-2V26.8284c0-0.5304-0.2107-1.0391-0.5858-1.4142L68.5858,7.5858 C68.2107,7.2107,67.702,7,67.1716,7z" />
+                    <path fill="none" stroke="#979593" d="M67,7v18c0,1.1046,0.8954,2,2,2h18" />
+                    <path fill="#C8C6C4" d="M79 61H48v-2h31c.5523 0 1 .4477 1 1l0 0C80 60.5523 79.5523 61 79 61zM79 55H48v-2h31c.5523 0 1 .4477 1 1l0 0C80 54.5523 79.5523 55 79 55zM79 49H48v-2h31c.5523 0 1 .4477 1 1l0 0C80 48.5523 79.5523 49 79 49zM79 43H48v-2h31c.5523 0 1 .4477 1 1l0 0C80 42.5523 79.5523 43 79 43zM79 67H48v-2h31c.5523 0 1 .4477 1 1l0 0C80 66.5523 79.5523 67 79 67z" />
+                    <path fill="#185ABD" d="M12,74h32c2.2091,0,4-1.7909,4-4V38c0-2.2091-1.7909-4-4-4H12c-2.2091,0-4,1.7909-4,4v32 C8,72.2091,9.7909,74,12,74z" />
+                    <path d="M21.6245,60.6455c0.0661,0.522,0.109,0.9769,0.1296,1.3657h0.0762 c0.0306-0.3685,0.0889-0.8129,0.1751-1.3349c0.0862-0.5211,0.1703-0.961,0.2517-1.319L25.7911,44h4.5702l3.6562,15.1272 c0.183,0.7468,0.3353,1.6973,0.457,2.8532h0.0608c0.0508-0.7979,0.1777-1.7184,0.3809-2.7615L37.8413,44H42l-5.1183,22h-4.86 l-3.4885-14.5744c-0.1016-0.4197-0.2158-0.9663-0.3428-1.6417c-0.127-0.6745-0.2057-1.1656-0.236-1.4724h-0.0608 c-0.0407,0.358-0.1195,0.8896-0.2364,1.595c-0.1169,0.7062-0.211,1.2273-0.2819,1.565L24.1,66h-4.9357L14,44h4.2349 l3.1843,15.3882C21.4901,59.7047,21.5584,60.1244,21.6245,60.6455z" />
+                </svg>
+                </button>
+            </div>
 			<!--
 			<div class="card">
 				Phone: <a href="tel:+447000000">+44 (0) 7000 000 000</a>
@@ -78,7 +101,10 @@ footer a::after { content: '|'; margin-left: 1em; }
     <main>
         <article>
             <h2>Profile</h2>
-            <p>A British citizen living in South East London. Open to labourer jobs, teaching assistant jobs (including SEN), warehouse operative jobs (up to 23kg)</p>
+            <p>
+                A British citizen living in South East London. Open to labourer jobs,
+                teaching assistant jobs (including SEN), warehouse operative jobs (up to 23kg).
+            </p>
         </article>
         <article>
             <h2>Qualities/Skills</h2>
@@ -101,10 +127,19 @@ footer a::after { content: '|'; margin-left: 1em; }
             </div>
             <div class="card">
                 <div class="container">
-                    <h3>CITB Health &amp; Safety</h3>
+                    <h3>Introduction to Construction</h3>
                     <h4><strong>Provider:</strong> Cidori Training</h4>
                     <h4><strong>Completed:</strong> Nov 2021</h4>
-                    <h4><strong>Result:</strong> TBC</h4>
+                    <h4><strong>Result:</strong> Pass</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <h3>CITB Health & Safety for Operatives</h3>
+                    <h4><strong>Card type:</strong> Labourer (Green)</h4>
+                    <h4><strong>Provider:</strong> CSCS</h4>
+                    <h4><strong>Completed:</strong> Nov 2021</h4>
+                    <h4><strong>Result:</strong> Pass</h4>
                 </div>
             </div>
             <div class="card">
